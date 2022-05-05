@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>HomePage</h1>
+    <form action="{% url 'search_results' %}" method="get" class="d-flex">
+        <input name="q"
+               class="form-control me-2"
+               type="search"
+               placeholder="Search..."
+               aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="float: right;">Search</button>
+    </form>
+{% endblock content %}
